@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+---
+
+<BaseLayout title="404" description="404 Page Not Found">
+    <div class="h-[calc(100vh-100px)] flex flex-col items-center justify-center text-center">
+        <img src="/images/404image.svg" alt="404 Illustration" class="mb-8" height="100" width="100"/>
+        <div class="text-center">
+            <h1 class="font-family: 'Switzer-Bold'">404 </h1>
+            <p class="font-family: 'Switzer-Bold'">Oops! Page not found.</p>
+            <a href="/" class="text-blue-500 underline mt-4">Go to Homepage</a>
+        </div>
+    </div>
+</BaseLayout>
