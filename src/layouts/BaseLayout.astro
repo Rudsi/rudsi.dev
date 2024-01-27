@@ -1,0 +1,26 @@
+---
+import NavBar from "../components/NavBar.astro"
+import Link from "../components/Link.astro"
+
+let href = "hi"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<div class="mx-auto max-w-container px-4">
+            <header class ="h-37.5px flex items-center justify-between -mt-2">
+                <slot name= "header-content">
+                    <Link {href}>← back</Link>
+                </slot>
+                <NavBar/>
+            </header>
+        </div>
+	</body>
+</html>
