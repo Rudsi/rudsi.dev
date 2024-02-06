@@ -16,5 +16,11 @@ export async function getProjects(): Promise<Project[]> {
       link: "https://github.com/rudsi/rudsi.dev",
       description: "personal site built with Astro",
     },
+
+    {
+      repo: "ruddit-reddit-clone-",
+      link: "https://github.com/rudsi/ruddit-reddit-clone-.git",
+      description: "clone of popular social media website reddit",
+    },
   ];
 }
