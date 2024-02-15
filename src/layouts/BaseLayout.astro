@@ -50,7 +50,7 @@ else href = "/"
     <link rel="preload" href="fonts/Switzer-ExtralightItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
 	</head>
 	<body>
-		<div class="mx-auto max-w-container px-4">
+		<div class="bowl">
             <header class="h-37.5px flex items-center justify-between -mt-2">
                 <slot name="header-content">
                     <Link {href}>← back</Link>
@@ -59,8 +59,8 @@ else href = "/"
             </header>
             <slot/>
             <div class="mt-24"/>
-            <Footer/>
-        </div>
+              <Footer/>
+            </div>
 	</body>
 </html>
 
@@ -203,4 +203,25 @@ code, pre {
     @apply mx-auto rounded my-6;
   }
 }
+
+@media (max-width: 767px) {
+  .bowl {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bowl {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
 </style>
