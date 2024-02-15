@@ -1,7 +1,5 @@
 ---
-import { getCollection } from "astro:content"
 import Project from "../components/Project.astro"
-import Link from "../components/Link.astro"
 import BaseLayout from "../layouts/BaseLayout.astro"
 import { getProjects } from "../lib/projects"
 
@@ -17,17 +15,19 @@ const title = "home";
    </h1>
 
 
-   <main class="codac">
+   <main class="prose">
       <p>
-        Hello <strong>Rudra Pratap Singh</strong>, aka <strong>rudsi!</strong>.  I'm an 18 y/o CS undergrad student with a passion for reading books and building things. I enjoy <strong>language design</strong>, <strong>web development</strong>, 
-        and exploring the intersection of technology and creativity.
-          
+        Hello, <strong> I am Rudra Pratap Singh</strong>, aka <strong>rudsi!</strong>. 
+        I'm an 18 y/o CS undergrad with a passion for building 
+        things and reading books. 
+        I enjoy <strong>language design</strong>, <strong>web development</strong>, 
+        and exploring the intersection of technology and creativity. 
       </p>
 
       <div class="mt-12"></div>
-      <h1>Projects</h1>
+      <h2>Projects</h2>
 
-      <div class="grid grid-cols-2 gap-15 md:grid-cols-3">
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
       {projects.map(project => <Project {project} />)}
       </div>
    </main>
@@ -35,7 +35,7 @@ const title = "home";
  
 </BaseLayout>
 <style>
-  h1 {
+  h2 {
     font-family: 'Switzer-Bold';
     font-weight: normal;
 }
